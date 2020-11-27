@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-                bat 'rmdir /Q /S GitToApache'
+                bat 'rmdir /Q /S GitToApache 2>nul'
 				echo 'cleaning done'
             }
         }
