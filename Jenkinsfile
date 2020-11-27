@@ -4,6 +4,7 @@ pipeline {
         stage('Clean') {
             steps {
                 bat 'rmdir /Q /S GitToApache'
+				echo 'cleaning done'
             }
         }
         stage('Get Code') {
